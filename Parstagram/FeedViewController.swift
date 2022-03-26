@@ -30,7 +30,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
-        cell.photoView.af_setImage(withURL: url)
+        cell.photoView.af.setImage(withURL: url)
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,6 +50,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+    
+
 
     /*
     // MARK: - Navigation
